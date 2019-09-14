@@ -1,0 +1,177 @@
+body{
+    color: aliceblue;
+    background-color: #1A1A1D;
+}
+
+#wrapper{    
+    display: grid;
+}
+
+/*Header podijeljen na 3 dijela da se lakse barata...*/
+
+#header{
+    display: grid;
+    background-color: #2c3e50;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+    "logo naziv123"
+    "meni meni";
+    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+a{
+    color: white;
+}
+
+h1{
+    margin-top: 0px;
+}
+
+#logo{
+    grid-area: logo;
+}
+
+#naziv123{
+    grid-area: naziv123;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+}
+
+#meni{
+    grid-area: meni;
+}
+
+#meni ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+#meni ul li{
+    display: inline;
+    text-decoration: underline;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+img{
+    width: 80px;
+    height: 100px;
+}
+
+/* Sad sredinu treba podijeliti na 3 dijela */
+
+#sredina{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: 
+    "side glavniSadrzaj";
+}
+
+@media screen and (max-width: 600px){
+ 
+     #header{
+        display: grid;
+        background-color: #2c3e50;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 
+        "logo logo"
+        "meni meni"
+        "naziv123 naziv123";
+        padding-bottom: 0px;
+        padding-top: 10px;
+        padding-left: 20px;
+    }          
+    
+    #logo{
+        grid-area: logo;
+        text-align: left;
+    }
+ 
+    #naziv123{
+        grid-area: naziv123;
+        margin: 0 auto;
+    }
+    
+    #sredina{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "side"
+        "glavniSadrzaj";    
+    }
+}
+
+#side{
+    grid-area: side;
+    background-color: #950740;
+    text-align: center;
+}
+
+#glavniSadrzaj{
+    grid-area: glavniSadrzaj;
+    text-align: center;
+}
+
+
+form{
+    margin: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+
+form input, p, h2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+form input[type="text"]{
+    border: 2px black solid;
+}
+
+table{
+    margin-top: 10px;
+}
+
+
+.unesi{
+    margin-left: 40px;
+}
+
+.kockica{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.godina {
+    width: 35%;
+    height: 170px;
+    background-color: #950740;
+    border: 2px white solid;
+    padding-left: 20px;
+    margin: 10px;
+}
+
+.godina p{
+    text-align: left;
+    margin: 0 auto;
+}
+
+h5{
+    text-align: center;
+}
+
+#footer{
+    background-color: #2c3e50;
+    padding: 20px;
+}

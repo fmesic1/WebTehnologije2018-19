@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>addZadatak</title>
+    <link rel="stylesheet" href="addZadatak.css">
+    <script src="moduli/validacija.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        
+        <div id="header">
+            <div id="logo">
+                <img src="images/phoenix_logo.gif" alt="logo">
+            </div>
+            <div id="naziv">
+                <h1>Dodavanje zadatka</h1>
+            </div>
+            <div id="meni">
+                <ul>
+                    <li><a href="login.html">login</a></li>
+                    <li><a href="studenti.html">studenti</a></li>
+                    <li><a href="zadaci.html">zadaci</a></li>
+                    <li><a href="commiti.html">commiti</a></li>
+                    <li><a href="addStudent.html">addStudent</a></li>
+                    <li><a href="addZadatak.html">addZadatak</a></li>
+                    <li><a href="addVjezba.html">addVjezba</a></li>
+                    <li><a href="addGodina.html">addGodina</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="glavniSadrzaj">
+            <form id="noviZadatak" method="POST" action="/addZadatak" enctype="multipart/form-data">
+                <h2>Novi zadatak</h2>
+                
+                <p>Naziv zadatka</p>
+                 <input id="nazivInput" type="text" name="naziv" required>
+                
+                <p>Tekst postavke *</p>
+                <input type="file" name="postavka" required>
+                
+                <input type="submit" value="Dodaj" id="buttonSubmit">
+            </form>
+        </div>
+        
+        <div id="footer">Web tehnologije 2018/19</div>
+        
+    </div>
+    <script src="addZadatak.js"></script>
+</body>
+</html>

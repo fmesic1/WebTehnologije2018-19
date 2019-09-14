@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #34495e;
+}
+
+.box{
+    width: 350px;
+    padding: 40px;
+    position: absolute;
+    /*TOP I LEFT JE UDALJEN OD BODY-A ZA pola a onda translate za velicinu pola po x i y, te kutije(forme) 
+    u kojoj su je vrati nazad */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    border-radius: 25px;
+}
+
+.u{
+    padding-top: 15px;
+    margin-left: -4px;
+}
+
+p{
+    color: white;
+    float: left;  
+    font-size: 16px;
+}
+
+.box input[type = "text"], .box input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    border-radius: 20px;
+    color: white;
+    transition: 0.5s;
+}
+
+.box input[type = "text"]:focus, .box input[type="password"]:focus{
+    border-color: #2ecc71;
+    
+}
+
+.box input[type="button"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    margin-right: 40px;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 35px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.box input[type="button"]:hover{
+    background-color: #2ecc71;
+}

@@ -1,0 +1,33 @@
+body{
+    color: aliceblue;
+    background-color: #1A1A1D;
+}
+
+h2{
+    text-align: center;
+    padding-top: 5%;
+}
+
+h3{
+    text-align: center;
+}
+
+div{
+    text-align: center;
+    margin-top: 5%;
+}
+
+button{
+    border: 0;
+    background: none;
+    border: 2px solid #950740;
+    padding: 14px 35px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:  #950740;

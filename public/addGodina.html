@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>addGodina</title>
+    <link rel="stylesheet" href="addGodina.css">
+    <script src="moduli/GodineAjax.js"></script>
+    <script src="moduli/validacija.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        
+        <div id="header">
+            
+            <div id="logo">
+                <img src="images/phoenix_logo.gif" alt="logo">
+            </div>
+            
+            <div id="naziv123">
+                <h1>Pregled studenata</h1>
+            </div>
+            
+            <div id="meni">
+                <ul>
+                    <li><a href="login.html">login</a></li>
+                    <li><a href="studenti.html">studenti</a></li>
+                    <li><a href="zadaci.html">zadaci</a></li>
+                    <li><a href="commiti.html">commiti</a></li>
+                    <li><a href="addStudent.html">addStudent</a></li>
+                    <li><a href="addZadatak.html">addZadatak</a></li>
+                    <li><a href="addVjezba.html">addVjezba</a></li>
+                    <li><a href="addGodina.html">addGodina</a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+        
+        <div id="sredina">
+            <div id="side">
+                <form method="POST" action="/addGodina">
+                    <h2>Unos godine</h2>
+                    
+                    <p>Naziv godine</p>
+                    <input id="naziv" type="text" name="nazivGod" required>
+                    
+                    <p>Naziv repozitorija vjezbe</p>
+                    <input id="rep1" type="text" name="nazivRepVje" required>
+    
+                    <p>Naziv repozitorija spirale</p>
+                    <input id="rep2" type="text" name="nazivRepSpi" required>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Ponisti">    
+                            </td>
+                            <td>
+                                <input id="button" class="unesi" type="submit" value="Unesi">    
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            
+            <div id="glavniSadrzaj">
+                <div class="kockica">
+                    <div class="godina">
+                        <h4>2015/16</h4>
+                        <p>Broj studenata: 90</p>
+                        <p>Broj vjezbi: 10</p>
+                        <p>Broj spirala: 4</p>
+                    </div>
+                    <div class="godina">
+                        <h4>2016/17</h4>
+                        <p>Broj studenata: 90</p>
+                        <p>Broj vjezbi: 10</p>
+                        <p>Broj spirala: 4</p>
+                    </div>
+                    <div class="godina">
+
+                    </div>
+                    <div class="godina">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer">Web tehnologije 2018/19</div>
+        
+    </div>
+<script src="addGodina.js"></script>
+</body>
+</html>

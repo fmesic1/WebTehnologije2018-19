@@ -1,0 +1,151 @@
+body{
+    color: aliceblue;
+    background-color: #1A1A1D;
+}
+
+#wrapper{    
+    display: grid;
+}
+
+/*Header podijeljen na 3 dijela da se lakse barata...*/
+
+#header{
+    display: grid;
+    background-color: #2c3e50;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+    "logo naziv"
+    "meni meni";
+    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+a{
+    color: white;
+}
+
+h1{
+    margin-top: 0px;
+}
+
+#logo{
+    grid-area: logo;
+}
+
+#naziv{
+    grid-area: naziv;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+}
+
+#meni{
+    grid-area: meni;
+}
+
+#meni ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+#meni ul li{
+    display: inline;
+    text-decoration: underline;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+img{
+    width: 80px;
+    height: 100px;
+}
+
+/* Sad sredinu treba podijeliti na 3 dijela */
+
+#sredina{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: 
+    "side glavniSadrzaj";
+}
+
+@media screen and (max-width: 600px){
+ 
+     #header{
+        display: grid;
+        background-color: #2c3e50;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 
+        "logo logo"
+        "meni meni"
+        "naziv naziv";
+        padding-bottom: 0px;
+        padding-top: 10px;
+        padding-left: 20px;
+    }          
+    
+    #logo{
+        grid-area: logo;
+        text-align: left;
+    }
+ 
+    #naziv{
+        grid-area: naziv;
+        margin: 0 auto;
+    }
+    
+    #sredina{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "side"
+        "glavniSadrzaj";    
+    }
+}
+
+#side{
+    grid-area: side;
+    background-color: #950740;
+}
+
+#glavniSadrzaj{
+    grid-area: glavniSadrzaj;
+    background-color: #3498db;
+}
+
+h4{
+    margin: 15px auto;
+    text-align: center;
+}
+
+#side ul{
+    list-style-type: none;
+    margin: 15px auto;
+    height: 200px; 
+    width: 70%;
+    overflow: hidden;
+    overflow-y: scroll;
+    border: 1px white solid;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+table{
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+td, th{
+    border: solid white 1px;
+    padding: 10px;
+}
+
+/*FOOTER*/
+
+#footer{
+    background-color: #2c3e50;
+    padding: 20px;
+}

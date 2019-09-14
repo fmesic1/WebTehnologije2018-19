@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Greska</title>
+    <link rel="stylesheet" href="greska.css">
+</head>
+<body>
+    <h2>404: GRESKA!</h2>
+    <h3><%= error %></h3>
+    <div>
+        <button onclick="goBack()">Nazad</button>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

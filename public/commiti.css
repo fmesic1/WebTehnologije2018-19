@@ -1,0 +1,116 @@
+body{
+    color: aliceblue;
+    background-color: #1A1A1D;
+}
+
+#wrapper{    
+    display: grid;
+}
+
+/*Header podijeljen na 3 dijela da se lakse barata...*/
+
+#header{
+    display: grid;
+    background-color: #2c3e50;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+    "logo naziv"
+    "meni meni";
+    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+a{
+    color: white;
+}
+
+h1{
+    margin-top: 0px;
+}
+
+#logo{
+    grid-area: logo;
+}
+
+#naziv{
+    grid-area: naziv;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+}
+
+#meni{
+    grid-area: meni;
+}
+
+#meni ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+#meni ul li{
+    display: inline;
+    text-decoration: underline;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+img{
+    width: 80px;
+    height: 100px;
+}
+
+@media screen and (max-width:600px){
+     
+     #header{
+        display: grid;
+        background-color: #2c3e50;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 
+        "logo logo"
+        "meni meni"
+        "naziv naziv";
+        padding-bottom: 0px;
+        padding-top: 10px;
+        padding-left: 20px;
+    }          
+    
+    #logo{
+        grid-area: logo;
+        text-align: left;
+    }
+ 
+    #naziv{
+        grid-area: naziv;
+        margin: 0 auto;
+    }    
+
+}
+
+/* Sad ide sredina */
+
+#sredina{
+    padding: 40px;
+}
+
+#sredina table{
+    border: 1px white solid;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#sredina table th, td{
+    padding: 10px;
+    border: 1px white solid;
+    text-align: center;
+}
+
+#footer{
+    padding: 20px;
+    background-color: #2c3e50;
+}

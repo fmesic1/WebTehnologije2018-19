@@ -1,0 +1,174 @@
+body{
+    color: aliceblue;
+    background-color: #1A1A1D;
+}
+
+#wrapper{    
+    display: grid;
+}
+
+/*Header podijeljen na 3 dijela da se lakse barata...*/
+
+#header{
+    display: grid;
+    background-color: #2c3e50;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+    "logo naziv"
+    "meni meni";
+    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+a{
+    color: white;
+}
+
+h1{
+    margin-top: 0px;
+}
+
+#logo{
+    grid-area: logo;
+}
+
+#naziv{
+    grid-area: naziv;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+}
+
+#meni{
+    grid-area: meni;
+}
+
+#meni ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+#meni ul li{
+    display: inline;
+    text-decoration: underline;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+img{
+    width: 80px;
+    height: 100px;
+}
+
+/* Sad sredinu treba podijeliti na 3 dijela */
+
+#sredina{
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-areas: 
+    "prvaCetvrt drugaCetvrt polovina";
+}
+
+@media screen and (max-width: 600px){
+ 
+     #header{
+        display: grid;
+        background-color: #2c3e50;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 
+        "logo logo"
+        "meni meni"
+        "naziv naziv";
+        padding-bottom: 0px;
+        padding-top: 10px;
+        padding-left: 20px;
+    }          
+    
+    #logo{
+        grid-area: logo;
+        text-align: left;
+    }
+ 
+    #naziv{
+        grid-area: naziv;
+        margin: 0 auto;
+    }    
+    
+    
+    #sredina{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "prvaCetvrt drugaCetvrt"
+    "polovina polovina";
+    }   
+}
+
+#prvaCetvrt{
+    grid-area: prvaCetvrt;
+    text-align: center;
+    padding-top: 15px;
+    border: 1px solid white;
+    border-left: none;
+}
+
+#drugaCetvrt{
+    grid-area: drugaCetvrt;
+    text-align: center;
+    padding-top: 15px;
+    border: 1px solid white;
+}
+
+input{
+    width: 95%;
+    border: 0px;
+    padding: 4px;
+}
+
+table{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.polovina{
+    grid-area: polovina;
+    border: 1px solid white;
+    border-right: none;
+    text-align: center;
+}
+
+
+.cetvrtina ul{
+    list-style-type: none;
+    margin: 15px auto;
+    text-align: center;
+    height: 200px; width:70%;
+    overflow: hidden;
+    overflow-y: scroll;
+    border: 1px white solid;
+    padding-left: 5px;
+    padding-top: 3px;
+    text-align: left;
+}   
+
+.folder{
+    border: 1px white solid;
+    margin: 10px;
+}
+
+.item{
+    display: inline-block;
+    background-color: #950740;
+    border: 1px solid white;
+    padding: 6%;
+    margin: 2%;
+}
+
+#footer{
+    padding: 20px;
+    background-color: #2c3e50;
+}

@@ -1,0 +1,69 @@
+    <!doctype html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>addStudent</title>
+        <link rel="stylesheet" href="addStudent.css">
+        <script src="../moduli/validacija.js"></script>
+        <script src="moduli/BitBucket.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+
+            <div id="header">
+                <div id="logo">
+                    <img src="images/phoenix_logo.gif" alt="logo">
+                </div>
+                <div id="naziv">
+                    <h1>Pregled studenata</h1>
+                </div>
+                <div id="meni">
+                    <ul>
+                        <li><a href="login.html">login</a></li>
+                        <li><a href="studenti.html">studenti</a></li>
+                        <li><a href="zadaci.html">zadaci</a></li>
+                        <li><a href="commiti.html">commiti</a></li>
+                        <li><a href="addStudent.html">addStudent</a></li>
+                        <li><a href="addZadatak.html">addZadatak</a></li>
+                        <li><a href="addVjezba.html">addVjezba</a></li>
+                        <li><a href="addGodina.html">addGodina</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="glavniSadrzaj">
+                <div class="forme" id="forme">
+                <form name="fPojedinacni">
+                    <h2>DodajStudenta</h2>
+                    
+                    <p>Godina</p>
+                    <p>
+                        <select name="sGodina">
+                        </select>
+                    </p>   
+
+                    <p>Key</p>
+                    <input type="text" name="key">
+
+                    <p>Secret</p>
+                    <input type="text" name="secret">
+                    <table>
+                        <tr>
+                            <td>
+                            <input type="button" value="Ucitaj" name="ucitaj">
+                            </td>
+                            <td>
+                            <input type="button" value="Dodaj" disabled>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            </div>
+
+            <div id="footer">Web tehnologije 2018/19</div>
+
+        </div>
+        <script src="addStudent.js"></script>
+    </body>
+    </html>
